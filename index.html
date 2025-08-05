@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>서울 쓰레기통 지도</title>
+  <link rel="stylesheet" href="style.css"/>
+  <!-- PapaParse (CSV 대신 JSON만 쓰신다면 생략 가능) -->
+  <script src="https://unpkg.com/papaparse@5.3.0/papaparse.min.js"></script>
+
+  <!-- ① 카카오 Maps SDK 로드: YOUR_APP_KEY 자리에 발급받은 JavaScript 키 입력 -->
+  <script
+          src="//dapi.kakao.com/v2/maps/sdk.js?appkey=255b4ecfcc2648c2b8450144c82dc076&libraries=services"
+  ></script>
+</head>
+<body>
+<!-- ② 지도를 렌더링할 영역 -->
+<div id="map" style="width:100%;height:100vh;"></div>
+
+<!-- ③ 본격 로직: app.js -->
+<script src="app.js"></script>
+</body>
+</html>
